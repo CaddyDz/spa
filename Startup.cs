@@ -64,7 +64,7 @@ namespace spa
 
 				if (env.IsDevelopment())
 				{
-					spa.UseReactDevelopmentServer(npmScript: "serve:bs");
+					spa.UseReactDevelopmentServer(npmScript: "serve");
 				}
 			});
 		}

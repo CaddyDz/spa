@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
+using spa.Models;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using spa.Models;
+using System.Collections.Generic;
 
 namespace spa.Controllers
 {

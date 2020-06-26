@@ -1,10 +1,10 @@
 ﻿using System;
-using spa.Models;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
+using spa.Models;
 
 namespace spa.Controllers
 {

@@ -1,10 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
+using Microsoft.Extensions.Hosting;
+using VueCliMiddleware;
 
 namespace spa
 {
@@ -23,7 +24,7 @@ namespace spa
 
 			services.AddControllersWithViews();
 
-			// In production, the Vue files will be served from this directory
+			// In production, the React files will be served from this directory
 			services.AddSpaStaticFiles(configuration =>
 			{
 				configuration.RootPath = "frontend/dist";
@@ -46,7 +47,6 @@ namespace spa
 
 			app.UseHttpsRedirection();
 			app.UseStaticFiles();
-
 			app.UseSpaStaticFiles();
 
 			app.UseRouting();
@@ -64,7 +64,7 @@ namespace spa
 
 				if (env.IsDevelopment())
 				{
-					spa.UseReactDevelopmentServer(npmScript: "serve");
+					spa.UseVueCli(npmScript: "serve");
 				}
 			});
 		}

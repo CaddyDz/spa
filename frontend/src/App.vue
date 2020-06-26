@@ -3,6 +3,7 @@
 		<div id="nav">
 			<router-link to="/">Home</router-link>&NonBreakingSpace;&VerticalLine;
 			<router-link to="/about">About</router-link>&NonBreakingSpace;&VerticalLine;
+			<router-link to="/counter">Counter</router-link>&NonBreakingSpace;&VerticalLine;
 			<router-link to="/forecast">Forecast</router-link>
 		</div>
 		<router-view />

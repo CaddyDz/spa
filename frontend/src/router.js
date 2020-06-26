@@ -22,6 +22,11 @@ export default new Router({
 			component: () => import( /* webpackChunkName: "about" */ './views/About.vue')
 		},
 		{
+			path: '/counter',
+			name: 'counter',
+			component: () => import( /* webpackChunkName: "counter" */ './views/Counter.vue')
+		},
+		{
 			path: '/forecast',
 			name: 'forecast',
 			component: () => import( /* webpackChunkName: "forecast" */ './views/Forecast.vue')

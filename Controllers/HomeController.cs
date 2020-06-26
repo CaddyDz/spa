@@ -7,11 +7,11 @@ using Microsoft.Extensions.Logging;
 
 namespace spa.Controllers
 {
-    public class HomeController : Controller
-    {
-        public IActionResult Spa()
-        {
-            return File("~/index.html", "text/html");
-        }
-    }
+	public class HomeController : Controller
+	{
+		public IActionResult Spa()
+		{
+			return File("~/index.html", "text/html");
+		}
+	}
 }
